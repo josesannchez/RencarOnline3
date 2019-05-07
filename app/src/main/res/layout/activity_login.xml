@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Login"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background34" />
+
+        <ImageView
+            android:id="@+id/image_ariana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ki" />
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="115dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="144dp"
+            android:fontFamily="@font/gitchgitch"
+            android:text="@string/Lo"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="439dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="4dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabfacebook2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelsocial"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="9dp"
+                android:padding="0dp"
+                android:scaleType="center"
+                android:src="@drawable/facebook"
+                app:backgroundTint="@color/colorFacebook"
+                app:elevation="20dp" />
+
+            <LinearLayout
+                android:id="@+id/lnemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/baseline_email_white_24dp"
+                    android:drawableLeft="@drawable/baseline_email_white_24dp"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColorHint="#FFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnemail"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/baseline_lock_white_24dp"
+                    android:drawableLeft="@drawable/baseline_lock_white_24dp"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="@string/hintPass"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColorHint="#FFF" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnpassword"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_background2"
+                android:text="@string/Login"
+                android:textAllCaps="false"
+                android:textColor="#F0F5F6F8"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labelsocial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnlogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/social"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@color/colorAccentblanco" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabfacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelsocial"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginStart="199dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="116dp"
+                android:padding="0dp"
+                android:scaleType="center"
+                android:src="@drawable/google"
+                app:backgroundTint="@color/colorWhite"
+                app:elevation="20dp" />
+
+
+            <TextView
+                android:id="@+id/labelgmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fabfacebook"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="203dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginBottom="73dp"
+                android:text="@string/Gmail"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/labelgmail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fabfacebook"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="191dp"
+                android:layout_marginBottom="76dp"
+                android:text="@string/facebook"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnregistro"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="262dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/button_background2"
+                android:text="@string/R"
+                android:textColor="#F8F6F6"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
